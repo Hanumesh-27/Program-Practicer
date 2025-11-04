@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Practice Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Programming Practice Tracker</h1>
+
+    <!-- Add / Edit Problem Section -->
+    <section class="card">
+      <h2>Add or Edit Problem</h2>
+      <form id="problemForm">
+        <label>Title:</label>
+        <input type="text" id="title" placeholder="Enter problem title">
+
+        <label>Topic:</label>
+        <input type="text" id="topic" placeholder="Enter topic (e.g., Arrays, Strings)">
+
+        <label>Difficulty (Easy/Medium/Hard):</label>
+        <input type="text" id="difficulty" placeholder="Enter difficulty">
+
+        <label>Code Snippet:</label>
+        <textarea id="codeSnippet" rows="5" placeholder="Write your code here..."></textarea>
+
+        <button type="button" id="addBtn">Add Problem</button>
+      </form>
+    </section>
+
+    <!-- Search Section -->
+    <section class="card">
+      <h2>Search Problems</h2>
+      <div class="search-box">
+        <input type="text" id="search" placeholder="Enter topic or difficulty">
+        <button id="searchTopicBtn">Search by Topic</button>
+        <button id="searchDiffBtn">Search by Difficulty</button>
+        <button id="viewAllBtn">View All</button>
+      </div>
+    </section>
+
+    <!-- Sort Section -->
+    <section class="card">
+      <h2>Sort Problems</h2>
+      <button id="sortDateBtn">Sort by Date</button>
+      <button id="sortDiffBtn">Sort by Difficulty</button>
+    </section>
+
+    <!-- Output Section -->
+    <section class="card">
+      <h2>Problems List</h2>
+      <div id="outputArea" class="output-area">
+        <p>No problems added yet.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
