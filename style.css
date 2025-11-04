@@ -1,0 +1,117 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: #0056b3;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 5px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-box input {
+  flex: 1;
+}
+
+.output-area {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  min-height: 150px;
+  overflow-y: auto;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.problem-item {
+  background: #fdfdfd;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 5px solid #007bff;
+}
+
+.problem-item pre {
+  background: #f8f9fa;
+  padding: 8px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.output-area p {
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    flex-direction: column;
+  }
+  button {
+    width: 100%;
+  }
+}
